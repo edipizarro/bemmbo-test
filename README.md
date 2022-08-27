@@ -5,6 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # What does this project do
 
 It is a mockup to assign credit notes to invoices using react
+Example available at [this link](bemmbo-test-edison.xyz](http://bemmbo-test-edison.xyz.s3-website.us-east-2.amazonaws.com)
 
 ## Available Scripts
 
