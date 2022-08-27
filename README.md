@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# What does this project do
+
+It is a mockup to assign credit notes to invoices using react
+
 ## Available Scripts
 
 In the project directory, you can run:
