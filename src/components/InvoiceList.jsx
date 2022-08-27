@@ -22,8 +22,10 @@ function InvoiceList({
   }
 
   return (
-  <div className="InvoiceList" className="overflow-x-auto relative">
-    <h3>{title}</h3>
+  <div className="invoice-list overflow-x-auto relative">
+    <h3 className="text-3xl font-semibold">
+    {title}
+    </h3>
     {}
     <table className="overflow-x-auto relative shadow-md sm:rounded-lg">
       <thead className="text-xs text-gray-100 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -33,7 +35,6 @@ function InvoiceList({
           <th scope="col" className="py-3 px-6"> Invoice Org Id </th>
           <th scope="col" className="py-3 px-6"> Invoice Amount </th>
           <th scope="col" className="py-3 px-6"> Invoice Currency </th>
-          <th scope="col" className="py-3 px-6"> Invoice Type </th>
         </tr>
       </thead>
       <tbody className="text-xs text-gray-100 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-200">
@@ -56,7 +57,6 @@ function InvoiceList({
               <td className="py-4 px-6"> {invoice.organization_id} </td>
               <td className="py-4 px-6"> ${invoice.amount} CLP</td>
               <td className="py-4 px-6"> {invoice.currency} </td>
-              <td className="py-4 px-6"> {invoice.type} </td>
             </tr>
           )} else { return null }
         })}
