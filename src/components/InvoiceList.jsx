@@ -34,7 +34,6 @@ function InvoiceList({
           <th scope="col" className="py-3 px-6"> ID</th>
           <th scope="col" className="py-3 px-6"> Invoice Org Id </th>
           <th scope="col" className="py-3 px-6"> Invoice Amount </th>
-          <th scope="col" className="py-3 px-6"> Invoice Currency </th>
         </tr>
       </thead>
       <tbody className="text-xs text-gray-100 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-200">
@@ -55,8 +54,7 @@ function InvoiceList({
               </td>
               <td className="py-4 px-6"> {invoice.id} </td>
               <td className="py-4 px-6"> {invoice.organization_id} </td>
-              <td className="py-4 px-6"> ${invoice.amount} CLP</td>
-              <td className="py-4 px-6"> {invoice.currency} </td>
+              <td className="py-4 px-6"> ${invoice.amount} {invoice.currency}</td>
             </tr>
           )} else { return null }
         })}
